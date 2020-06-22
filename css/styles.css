@@ -46,6 +46,8 @@ nav {
   -webkit-box-shadow: none;
           box-shadow: none;
   z-index: 99;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 nav a {
@@ -81,9 +83,9 @@ nav .login-link i {
 }
 
 .hero {
+  margin-bottom: 80px;
   background: var(--color-primary);
   min-height: 100vh;
-  margin-bottom: 80px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -136,6 +138,10 @@ nav .login-link i {
   background-size: cover;
 }
 
+.teach {
+  padding-bottom: 80px;
+}
+
 .teach .about h4 {
   font-weight: 600;
   padding: 16px 0;
@@ -167,6 +173,7 @@ nav .login-link i {
 }
 
 .testimonials-section {
+  padding-bottom: 80px;
   background: var(--color-quaternary);
 }
 
@@ -205,15 +212,21 @@ nav .login-link i {
 }
 
 .testimonials-section .testimonials .carousel {
-  height: 75% !important;
+  height: 100vh !important;
+}
+
+@media only screen and (min-width: 992px) {
+  .testimonials-section .testimonials .carousel {
+    height: 100% !important;
+  }
 }
 
 .testimonials-section .testimonials .carousel .carousel-item {
   width: 100%;
   color: black;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  min-height: -webkit-max-content;
+  min-height: -moz-max-content;
+  min-height: max-content;
 }
 
 .testimonials-section .testimonials .carousel .carousel-item h5 {
@@ -238,7 +251,13 @@ nav .login-link i {
 
 .testimonials-section .testimonials .carousel .indicators {
   position: relative;
-  margin-top: 22rem;
+  margin-top: 34rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .testimonials-section .testimonials .carousel .indicators {
+    margin-top: 22rem;
+  }
 }
 
 .testimonials-section .testimonials .carousel .indicators .indicator-item {
