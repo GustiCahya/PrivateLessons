@@ -142,6 +142,16 @@ nav .login-link i {
   padding-bottom: 80px;
 }
 
+.teach .about {
+  padding-bottom: 80px;
+}
+
+@media only screen and (min-width: 992px) {
+  .teach .about {
+    padding-bottom: 0;
+  }
+}
+
 .teach .about h4 {
   font-weight: 600;
   padding: 16px 0;
@@ -154,7 +164,13 @@ nav .login-link i {
 }
 
 .teach .courses {
-  padding-left: 2rem;
+  padding-left: 0;
+}
+
+@media only screen and (min-width: 992px) {
+  .teach .courses {
+    padding-left: 2rem;
+  }
 }
 
 .teach .courses .card {
@@ -269,5 +285,121 @@ nav .login-link i {
   border: 1.5px solid black;
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+}
+
+.contact {
+  background: var(--color-tertiary);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.contact .started {
+  padding-right: 4rem;
+}
+
+.contact .started h4 {
+  font-size: bold;
+}
+
+.contact .started p {
+  line-height: 1.6;
+  letter-spacing: .05rem;
+}
+
+.contact .contact-form label {
+  font-weight: bold;
+  color: black;
+  letter-spacing: .1rem;
+}
+
+.contact .contact-form input {
+  border-bottom: 3px solid black;
+  font-weight: bold;
+  letter-spacing: .05rem;
+}
+
+.contact .contact-form .message {
+  display: inline-block;
+  width: 100%;
+}
+
+@media only screen and (min-width: 992px) {
+  .contact .contact-form .message {
+    width: 60%;
+  }
+}
+
+.contact .contact-form .message textarea {
+  padding: 1rem 0;
+  height: 5rem;
+  border: none;
+  font-weight: bold;
+  letter-spacing: .05rem;
+  border-bottom: 3px solid black;
+  resize: none;
+}
+
+.contact .contact-form .message textarea:focus {
+  outline: none;
+}
+
+.contact .contact-form button {
+  display: inline-block;
+  width: 100%;
+  margin-top: 1rem;
+  background: transparent;
+  border: 5px solid black;
+  color: black;
+}
+
+.contact .contact-form button:hover {
+  background: var(--color-secondary);
+  border-color: var(--color-secondary);
+  color: white;
+}
+
+@media only screen and (min-width: 992px) {
+  .contact .contact-form button {
+    width: calc(39% - 2rem);
+    margin: 0 1rem;
+  }
+}
+
+.copyright {
+  font-size: var(--font-medium);
+  background: var(--color-tertiary);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.copyright .brand-logo a {
+  font-size: var(--font-large);
+  color: black;
+  line-height: 1.7;
+  letter-spacing: .05rem;
+}
+
+.copyright .links ul {
+  margin-bottom: 1rem;
+}
+
+.copyright .links ul li > a {
+  color: #202020;
+  line-height: 1.7;
+  letter-spacing: .05rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .copyright .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .copyright .links ul {
+    margin-bottom: 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
