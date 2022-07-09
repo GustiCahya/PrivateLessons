@@ -1,8 +1,10 @@
+// 1. Fungsi untuk mempermudah selektor
 const $ = (target) => {
     const elems = document.querySelectorAll(target);
     return (elems.length > 1) ? elems : document.querySelector(target);
 }
 
+// 2. Listener untuk handle sidenav dan bagian testimonials
 document.addEventListener('DOMContentLoaded', function(){
     M.Sidenav.init($('.sidenav'), {
         edge: 'right'
@@ -14,9 +16,9 @@ document.addEventListener('DOMContentLoaded', function(){
     });
     setInterval(function(){
         M.Carousel.getInstance($('.carousel')).next();
-    }, 2000);
+    }, 20000);
 })
-
+// 3. Fungsi untuk menghilangkan dan memunculkan sidenav
 const navbarIntersecting = new IntersectionObserver(function(entries, observer){
     entries.forEach((entry) => {
         if(entry.isIntersecting){
